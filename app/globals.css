@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a default font for the whole app */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  .head{
+    background-color: #f4f4f9;
+    padding: 5rem;
+  }
+  /* Global link styles */
+  a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Global heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0;
+  }
+  
+  /* Global button styles */
+  button {
+    cursor: pointer;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }

@@ -1,0 +1,70 @@
+/* styles/PostCard.module.css */
+.body{
+  background-color: #aae1f2;
+  padding: 1.5rem;
+  
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+   
+  }
+  .mains{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 5rem;
+    flex-direction: column;
+
+  }
+  .postCard {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between;
+  }
+  
+  .postCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05) rotateX(5deg) translateX(10px);
+  }
+  
+  .postCard h3 {
+    margin: 8px 0;
+    font-size: 1.5em;
+    color: #2eaceb;
+  }
+  
+  .postCard p {
+    margin: 8px 0;
+    color: #7da6b7cc;
+  }
+  
+  .postCard a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .postCard a:hover h3 {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 1200px) {
+    .gridContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gridContainer {
+      grid-template-columns: 1fr;
+    }
+  }
+  
